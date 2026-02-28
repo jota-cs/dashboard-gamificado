@@ -1,0 +1,48 @@
+:root {
+    /* ============================= */
+    /* 🎨 RED ASCENSION THEME */
+    /* ============================= */
+
+    /* Backgrounds */
+    --bg-app: #0e0e11;
+    --bg-surface: #151518;
+    --bg-surface-hover: #1f1f24;
+    
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+    
+    /* Primary Red Identity */
+    --primary-color: #ff2e2e;          /* Vermelho principal */
+    --primary-hover: #ff4d4d;          /* Vermelho mais claro */
+    --primary-glow: rgba(255, 46, 46, 0.6);
+
+    /* Gamificação */
+    --accent-color: #ff3b3b;           /* Usado para destaque */
+    --xp-bar-bg: #1f1f24;
+    --xp-bar-fill: linear-gradient(90deg, #ff2e2e, #ff4d4d);
+
+    /* Status */
+    --success-color: #22c55e;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+
+    /* Espaçamentos e Bordas */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+}   

@@ -1,0 +1,81 @@
+/* ============================= */
+/* GRADE DE HÁBITOS */
+/* ============================= */
+
+.habits-panel {
+    margin-top: var(--spacing-lg);
+}
+
+.habits-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.habits-grid {
+    background: var(--bg-surface);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid #222;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 180px repeat(7, 40px);
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.grid-header {
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+.grid-cell {
+    text-align: center;
+}
+
+.habit-title {
+    text-align: left;
+    font-weight: 500;
+}
+
+/* CÍRCULOS */
+
+.circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    margin: auto;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.circle:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.circle.done {
+    background: var(--primary-color);
+    box-shadow: 0 0 12px var(--primary-glow);
+}
+
+/* BOTÃO */
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
