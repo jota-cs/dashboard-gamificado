@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Gamificado | MVP</title>
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/components.css">
+</head>
+<body>
+    <div class="app-layout">
+        
+        <aside class="sidebar">
+            <div class="logo">🚀 Evolua.se</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Painel Principal</a></li>
+                    <li><a href="#">Minhas Missões</a></li>
+                    <li><a href="#">Árvore de Habilidades</a></li>
+                    <li><a href="#">Recompensas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <header class="topbar">
+            <div class="user-progress">
+                <span class="level-badge">Lvl 12</span>
+                <div class="xp-container">
+                    <div class="xp-info">
+                        <span>Novato</span>
+                        <span>1200 / 2000 XP</span>
+                    </div>
+                    <div class="xp-bar-bg">
+                        <div class="xp-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">👤</div>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            
+            <section class="tasks-section">
+                <header class="section-header">
+                    <h2>Missões Diárias</h2>
+                    <button class="btn-primary">+ Nova Missão</button>
+                </header>
+                <div class="task-list">
+                    <article class="task-card">
+                        <div class="task-info">
+                            <h3>Estudar Arquitetura de Software</h3>
+                            <span class="task-tag intelligence">Intelecto +10</span>
+                        </div>
+                        <button class="btn-complete">Concluir (+50 XP)</button>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="stats-section">
+                <h2>Seus Atributos</h2>
+                <div class="attributes-grid">
+                    <div class="attribute-card">
+                        <span class="icon">🧠</span>
+                        <h4>Intelecto</h4>
+                        <span class="value">Nível 4</span>
+                    </div>
+                    <div class="attribute-card">
+                        <span class="icon">💪</span>
+                        <h4>Disciplina</h4>
+                        <span class="value">Nível 7</span>
+                    </div>
+                </div>
+            </aside>
+
+        </main>
+    </div>
+</body>
+</html>

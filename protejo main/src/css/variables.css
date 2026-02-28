@@ -1,0 +1,36 @@
+:root {
+    /* Paleta de Cores (Dark Mode Nativo para um visual tech/gamer) */
+    --bg-app: #0f172a;
+    --bg-surface: #1e293b;
+    --bg-surface-hover: #334155;
+    
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    
+    --primary-color: #3b82f6; /* Azul moderno */
+    --accent-color: #10b981;  /* Verde para sucesso/XP */
+    --warning-color: #f59e0b; /* Laranja para alertas/fogo */
+    
+    /* Gamificação */
+    --xp-bar-bg: #334155;
+    --xp-bar-fill: linear-gradient(90deg, #3b82f6, #8b5cf6);
+
+    /* Espaçamentos e Bordas */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+}

@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Gamificado | MVP</title>
-    <link rel="stylesheet" href="src/css/variables.css">
-    <link rel="stylesheet" href="src/css/style.css">
+    <title>Dashboard | Red Dark</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-layout">
         
         <aside class="sidebar">
-            <div class="logo">🚀 Evolua.se</div>
+            <div class="logo">
+                <span class="logo-icon">🩸</span> by j0ta
+            </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" class="active">Painel Principal</a></li>
-                    <li><a href="#">Minhas Missões</a></li>
-                    <li><a href="#">Árvore de Habilidades</a></li>
+                    <li><a href="#" class="active">Visão Geral</a></li>
+                    <li><a href="#">Projetos Ativos</a></li>
+                    <li><a href="#">Atributos</a></li>
                     <li><a href="#">Recompensas</a></li>
                 </ul>
             </nav>
@@ -24,36 +25,52 @@
 
         <header class="topbar">
             <div class="user-progress">
-                <span class="level-badge">Lvl 12</span>
+                <span class="level-badge" id="levelDisplay">Lvl 1</span>
                 <div class="xp-container">
                     <div class="xp-info">
-                        <span>Novato</span>
-                        <span>1200 / 2000 XP</span>
+                        <span id="rankDisplay">Iniciante</span>
+                        <span id="xpText">0 / 1000 XP</span>
                     </div>
                     <div class="xp-bar-bg">
-                        <div class="xp-bar-fill" style="width: 60%;"></div>
+                        <div class="xp-bar-fill" id="xpBar" style="width: 0%;"></div>
                     </div>
                 </div>
             </div>
             <div class="user-profile">
-                <div class="avatar">👤</div>
+                <div class="avatar">CR</div>
             </div>
         </header>
 
         <main class="dashboard-content">
-            
             <section class="tasks-section">
                 <header class="section-header">
-                    <h2>Missões Diárias</h2>
+                    <h2>Missões do Dia</h2>
                     <button class="btn-primary">+ Nova Missão</button>
                 </header>
+                
                 <div class="task-list">
                     <article class="task-card">
                         <div class="task-info">
-                            <h3>Estudar Arquitetura de Software</h3>
-                            <span class="task-tag intelligence">Intelecto +10</span>
+                            <h3>Apostar tudo no burro</h3>
+                            <span class="task-tag intelligence">Criatividade +15</span>
                         </div>
-                        <button class="btn-complete">Concluir (+50 XP)</button>
+                        <button class="btn-complete" data-xp="400">Concluir (+400 XP)</button>
+                    </article>
+
+                    <article class="task-card">
+                        <div class="task-info">
+                            <h3>Furar saco de arroz no moria</h3>
+                            <span class="task-tag execution">Execução +20</span>
+                        </div>
+                        <button class="btn-complete" data-xp="500">Concluir (+500 XP)</button>
+                    </article>
+
+                    <article class="task-card">
+                        <div class="task-info">
+                            <h3>Explodir o jardim gramado</h3>
+                            <span class="task-tag management">Gestão +10</span>
+                        </div>
+                        <button class="btn-complete" data-xp="300">Concluir (+300 XP)</button>
                     </article>
                 </div>
             </section>
@@ -62,19 +79,18 @@
                 <h2>Seus Atributos</h2>
                 <div class="attributes-grid">
                     <div class="attribute-card">
-                        <span class="icon">🧠</span>
-                        <h4>Intelecto</h4>
-                        <span class="value">Nível 4</span>
+                        <h4>Direção</h4>
+                        <div class="attr-bar"><div class="attr-fill" style="width: 70%"></div></div>
                     </div>
                     <div class="attribute-card">
-                        <span class="icon">💪</span>
-                        <h4>Disciplina</h4>
-                        <span class="value">Nível 7</span>
+                        <h4>Edição</h4>
+                        <div class="attr-bar"><div class="attr-fill" style="width: 45%"></div></div>
                     </div>
                 </div>
             </aside>
-
         </main>
     </div>
+    
+    <script src="app.js"></script>
 </body>
 </html>
